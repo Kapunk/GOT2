@@ -1,0 +1,94 @@
+{
+  "@context" : {
+    "King" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#King"
+    },
+    "Kingdom" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Kingdom"
+    },
+    "numberOf" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#numberOf",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "House" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#House"
+    },
+    "hasMotto" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#hasMotto",
+      "@type" : "@id"
+    },
+    "Soundtrack" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Soundtrack"
+    },
+    "Character" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Character"
+    },
+    "Episode" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Episode"
+    },
+    "Hand" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Hand"
+    },
+    "sWatch" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Night'sWatch"
+    },
+    "IronThrone" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#IronThrone"
+    },
+    "Book" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Book"
+    },
+    "rules" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#rules",
+      "@type" : "@id"
+    },
+    "Battle" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Battle"
+    },
+    "Motto" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Motto"
+    },
+    "nameOf" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#nameOf",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "WhiteWalker" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#WhiteWalker"
+    },
+    "isRuled" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#isRuled",
+      "@type" : "@id"
+    },
+    "isMottoOf" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#isMottoOf",
+      "@type" : "@id"
+    },
+    "City" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#City"
+    },
+    "MythicalCreature" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#MythicalCreature"
+    },
+    "Wall" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Wall"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Wild" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Wild"
+    },
+    "Sigil" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Sigil"
+    },
+    "Season" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Season"
+    },
+    "East" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#East"
+    }
+  }
+}

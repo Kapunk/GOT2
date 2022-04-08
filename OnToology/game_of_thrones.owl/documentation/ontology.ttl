@@ -1,0 +1,282 @@
+@prefix : <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#> .
+
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones> rdf:type owl:Ontology ;
+                                                                rdfs:comment "Authors: Kepa Muñoz Seijas" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#hasMotto
+:hasMotto rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isMottoOf ;
+          rdfs:domain :House ;
+          rdfs:range :Motto .
+
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#isMottoOf
+:isMottoOf rdf:type owl:ObjectProperty ;
+           rdfs:domain :Motto ;
+           rdfs:range :House .
+
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#isRuled
+:isRuled rdf:type owl:ObjectProperty ;
+         owl:inverseOf :rules ;
+         rdfs:domain :Kingdom ;
+         rdfs:range :House .
+
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#rules
+:rules rdf:type owl:ObjectProperty ;
+       rdfs:domain :House ;
+       rdfs:range :Kingdom .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#nameOf
+:nameOf rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Battle ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#numberOf
+:numberOf rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Episode ;
+          rdfs:range xsd:nonNegativeInteger .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Battle
+:Battle rdf:type owl:Class ;
+        rdfs:comment "Each of the battles that occur" .
+
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Book
+:Book rdf:type owl:Class ;
+      rdfs:comment "Each of the books that inspired the series" .
+
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Character
+:Character rdf:type owl:Class ;
+           rdfs:comment "Each of the characters in the series" ;
+           rdfs:sameAs "https://dbpedia.org/page/Character" .
+
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#City
+:City rdf:type owl:Class ;
+      rdfs:comment "Each of the cities" ;
+      rdfs:sameAs "https://dbpedia.org/page/City" .
+
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#East
+:East rdf:type owl:Class ;
+      rdfs:comment "It is the territory outside of Westeros, across the sea" .
+
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Episode
+:Episode rdf:type owl:Class ;
+         rdfs:comment "Each episode of the series" ;
+         rdfs:sameAs "https://www.wikidata.org/wiki/Q1983062" .
+
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Hand
+:Hand rdf:type owl:Class ;
+      rdfs:comment "The king's henchman, make some decisions on his behalf" .
+
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#House
+:House rdf:type owl:Class ;
+       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasMotto ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass :Motto
+                       ] ;
+       rdfs:comment "Each of the houses that make up the seven kingdoms" .
+
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#IronThrone
+:IronThrone rdf:type owl:Class ;
+            rdfs:comment "Throne made with the swords of those defeated by the Targaryens" .
+
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#King
+:King rdf:type owl:Class ;
+      rdfs:comment "King of the seven kingdoms of Westeros" .
+
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Kingdom
+:Kingdom rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :isRuled ;
+                           owl:someValuesFrom :House
+                         ] ;
+         rdfs:comment "Each of the seven kingdoms of Westeros" .
+
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Motto
+:Motto rdf:type owl:Class ;
+       rdfs:comment "Motto of each of the houses" .
+
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#MythicalCreature
+:MythicalCreature rdf:type owl:Class ;
+                  owl:disjointWith <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Night'sWatch> ;
+                  rdfs:comment "Represents a mythical creature" .
+
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Season
+:Season rdf:type owl:Class ;
+        rdfs:comment "Each of the seasons of the series" .
+
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Sigil
+:Sigil rdf:type owl:Class ;
+       rdfs:comment "Sigil of each of the houses" .
+
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Soundtrack
+:Soundtrack rdf:type owl:Class ;
+            rdfs:comment "Series soundtrack" .
+
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Wall
+:Wall rdf:type owl:Class ;
+      rdfs:comment "Wall that protects the seven kingdoms" .
+
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#WhiteWalker
+:WhiteWalker rdf:type owl:Class ;
+             rdfs:comment "Fictional characters on the other side of the wall" .
+
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Wild
+:Wild rdf:type owl:Class ;
+      rdfs:comment "People who live on the other side of the wall" .
+
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Night'sWatch
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Night'sWatch> rdf:type owl:Class ;
+                                                                            rdfs:comment "They are in charge of protecting the wall" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#End
+:End rdf:type owl:NamedIndividual ,
+              :Season .
+
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Growing_Strong
+:Growing_Strong rdf:type owl:NamedIndividual ,
+                         :Motto .
+
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Reach
+:Reach rdf:type owl:NamedIndividual ,
+                :Kingdom ;
+       :isRuled :Tyrell .
+
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Stark
+:Stark rdf:type owl:NamedIndividual ,
+                :House ;
+       :hasMotto :Winter_Is_Coming .
+
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Tyrell
+:Tyrell rdf:type owl:NamedIndividual ,
+                 :House ;
+        :rules :Reach .
+
+
+###  http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Winter_Is_Coming
+:Winter_Is_Coming rdf:type owl:NamedIndividual ,
+                           :Motto ;
+                  :isMottoOf :Stark .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#p> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasMotto ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :Growing_Strong ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :House ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :Tyrell
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :WhiteWalker ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :MythicalCreature ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty :numberOf ;
+                                                                                                         owl:cardinality "6"^^xsd:nonNegativeInteger
+                                                                                                       ] ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Season ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :End
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
