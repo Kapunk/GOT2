@@ -1,0 +1,263 @@
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones> <http://www.w3.org/2000/01/rdf-schema#comment> "Authors: Kepa Muñoz Seijas" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#hasMotto
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#hasMotto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#hasMotto> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#isMottoOf> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#hasMotto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#House> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#hasMotto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Motto> .
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#isMottoOf
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#isMottoOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#isMottoOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Motto> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#isMottoOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#House> .
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#isRuled
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#isRuled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#isRuled> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#rules> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#isRuled> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Kingdom> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#isRuled> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#House> .
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#rules
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#rules> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#rules> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#House> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#rules> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Kingdom> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#nameOf
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#nameOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#nameOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Battle> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#nameOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#numberOf
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#numberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#numberOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Episode> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#numberOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Battle
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Battle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Battle> <http://www.w3.org/2000/01/rdf-schema#comment> "Each of the battles that occur" .
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Book
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Book> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Book> <http://www.w3.org/2000/01/rdf-schema#comment> "Each of the books that inspired the series" .
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Character
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Character> <http://www.w3.org/2000/01/rdf-schema#comment> "Each of the characters in the series" .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Character> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Character" .
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#City
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#City> <http://www.w3.org/2000/01/rdf-schema#comment> "Each of the cities" .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#City> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/City" .
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#East
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#East> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#East> <http://www.w3.org/2000/01/rdf-schema#comment> "It is the territory outside of Westeros, across the sea" .
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Episode
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Episode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Episode> <http://www.w3.org/2000/01/rdf-schema#comment> "Each episode of the series" .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Episode> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://www.wikidata.org/wiki/Q1983062" .
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Hand
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Hand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Hand> <http://www.w3.org/2000/01/rdf-schema#comment> "The king's henchman, make some decisions on his behalf" .
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#House
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#House> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#House> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Motto> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#hasMotto> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#House> <http://www.w3.org/2000/01/rdf-schema#comment> "Each of the houses that make up the seven kingdoms" .
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#IronThrone
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#IronThrone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#IronThrone> <http://www.w3.org/2000/01/rdf-schema#comment> "Throne made with the swords of those defeated by the Targaryens" .
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#King
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#King> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#King> <http://www.w3.org/2000/01/rdf-schema#comment> "King of the seven kingdoms of Westeros" .
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Kingdom
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Kingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Kingdom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#House> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#isRuled> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Kingdom> <http://www.w3.org/2000/01/rdf-schema#comment> "Each of the seven kingdoms of Westeros" .
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Motto
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Motto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Motto> <http://www.w3.org/2000/01/rdf-schema#comment> "Motto of each of the houses" .
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#MythicalCreature
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#MythicalCreature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#MythicalCreature> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Night'sWatch> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#MythicalCreature> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a mythical creature" .
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Season
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Season> <http://www.w3.org/2000/01/rdf-schema#comment> "Each of the seasons of the series" .
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Sigil
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Sigil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Sigil> <http://www.w3.org/2000/01/rdf-schema#comment> "Sigil of each of the houses" .
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Soundtrack
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Soundtrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Soundtrack> <http://www.w3.org/2000/01/rdf-schema#comment> "Series soundtrack" .
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Wall
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Wall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Wall> <http://www.w3.org/2000/01/rdf-schema#comment> "Wall that protects the seven kingdoms" .
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#WhiteWalker
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#WhiteWalker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#WhiteWalker> <http://www.w3.org/2000/01/rdf-schema#comment> "Fictional characters on the other side of the wall" .
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Wild
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Wild> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Wild> <http://www.w3.org/2000/01/rdf-schema#comment> "People who live on the other side of the wall" .
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Night'sWatch
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Night'sWatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Night'sWatch> <http://www.w3.org/2000/01/rdf-schema#comment> "They are in charge of protecting the wall" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#End
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#End> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#End> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Season> .
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Growing_Strong
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Growing_Strong> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Growing_Strong> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Motto> .
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Reach
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Reach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Reach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Kingdom> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Reach> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#isRuled> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Tyrell> .
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Stark
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Stark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Stark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#House> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Stark> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#hasMotto> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Winter_Is_Coming> .
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Tyrell
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Tyrell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Tyrell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#House> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Tyrell> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#rules> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Reach> .
+# 
+# http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Winter_Is_Coming
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Winter_Is_Coming> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Winter_Is_Coming> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Motto> .
+<http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Winter_Is_Coming> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#isMottoOf> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Stark> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid14 <http://www.w3.org/2003/11/swrl#body> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p> .
+_:genid16 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Growing_Strong> .
+_:genid16 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#hasMotto> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid14 <http://www.w3.org/2003/11/swrl#head> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid18 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Tyrell> .
+_:genid18 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#House> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid3 <http://www.w3.org/2003/11/swrl#body> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid5 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#WhiteWalker> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid3 <http://www.w3.org/2003/11/swrl#head> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid7 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#MythicalCreature> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid8 <http://www.w3.org/2003/11/swrl#body> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid10 .
+_:genid10 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid10 <http://www.w3.org/2003/11/swrl#classPredicate> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#cardinality> "6"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#numberOf> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid8 <http://www.w3.org/2003/11/swrl#head> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid13 .
+_:genid13 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#End> .
+_:genid13 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Season> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

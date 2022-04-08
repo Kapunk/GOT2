@@ -1,0 +1,387 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Motto"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#hasMotto"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "_:genid11"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "6"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#numberOf"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#End"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Season"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid16"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid18"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Growing_Strong"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#hasMotto"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Tyrell"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#House"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#isRuled"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#House"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid5"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid7"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#WhiteWalker"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#MythicalCreature"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid10"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid13"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Authors: Kepa Muñoz Seijas"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Battle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Each of the battles that occur"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Book",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Each of the books that inspired the series"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Character",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Each of the characters in the series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#City",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Each of the cities"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/City"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#East",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It is the territory outside of Westeros, across the sea"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#End",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Episode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Each episode of the series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://www.wikidata.org/wiki/Q1983062"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Growing_Strong",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Motto"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Hand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The king's henchman, make some decisions on his behalf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#House",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Each of the houses that make up the seven kingdoms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#IronThrone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Throne made with the swords of those defeated by the Targaryens"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#King",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "King of the seven kingdoms of Westeros"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Kingdom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Each of the seven kingdoms of Westeros"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Motto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Motto of each of the houses"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#MythicalCreature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents a mythical creature"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Night'sWatch"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Night'sWatch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "They are in charge of protecting the wall"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Reach",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#isRuled" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Tyrell"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Kingdom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Season",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Each of the seasons of the series"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Sigil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Sigil of each of the houses"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Soundtrack",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Series soundtrack"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Stark",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#hasMotto" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Winter_Is_Coming"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#House"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Tyrell",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#rules" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Reach"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#House"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Wall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Wall that protects the seven kingdoms"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#WhiteWalker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Fictional characters on the other side of the wall"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Wild",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "People who live on the other side of the wall"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Winter_Is_Coming",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#isMottoOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Stark"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Motto"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#hasMotto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#House"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Motto"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#isMottoOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#isMottoOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Motto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#House"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#isRuled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Kingdom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#House"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#rules"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#nameOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Battle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#numberOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#rules",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#House"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/3/game_of_thrones#Kingdom"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "urn:swrl:var#p",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+} ]
